@@ -1,4 +1,5 @@
 /* Denna fil skall innehålla din CSS kod */
+/*in all pages*/
 * {
     margin: 0px;
     padding:0px;
@@ -62,17 +63,28 @@
     transition: all 0.5s;
 }
 
-
 .navLinks a {
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
-    font-size: 15px;
+    font-size: 20px;
 }
 
     .menu {
-        margin-right: 40px;
+        margin-right: 3vh;
         cursor: pointer;
     }
 
     }
+.inPage {
+    background: palevioletred;
+}
+/*Home Page*/
+
+/*AboutUs Page*/
+
+/*Donation Page*/
+
+/*Research Page*/
+
+/*Volunteer Page*/
