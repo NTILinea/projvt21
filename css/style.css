@@ -1,1 +1,78 @@
 /* Denna fil skall innehålla din CSS kod */
+* {
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/*Burger menu code stuff*/
+.menu div {
+    width: 25px;
+    height: 3px;
+    background:white;
+    margin: 5px;
+    border-radius: 10%;
+    transition: all 0.2s;
+}
+
+.navActive {
+    transform: translateY(100vh);
+}
+
+.navLinks li {
+    list-style: none;
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+
+}
+
+.toggle .line2 {
+    opacity: 0;
+}
+
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/*Phone screen*/
+@media screen and (min-width: 50px ) {
+    nav {
+    background: teal;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    font-family: 'Times New Roman';
+    position: sticky;
+        top:0%;
+    }
+
+.navLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: absolute;
+    right: 0px;
+    height: 90vh;
+    top: -90vh;
+    background: rgb(16, 173, 173);
+    align-items: center;
+    width: 25%;
+    transition: all 0.5s;
+}
+
+
+.navLinks a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-size: 15px;
+}
+
+    .menu {
+        margin-right: 40px;
+        cursor: pointer;
+    }
+
+    }
