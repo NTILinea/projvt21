@@ -8,3 +8,5 @@ function toggleMeny() {
   
 }
 menu.addEventListener('click', toggleMeny)
+
+document.querySelector("footer").innerHTML = "jkhgjfdhhjkhghfdhh"
