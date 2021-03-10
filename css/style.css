@@ -5,6 +5,7 @@
     padding:0px;
     box-sizing: border-box;
 }
+
 /*Burger menu code stuff*/
 .menu div {
     width: 25px;
@@ -79,47 +80,172 @@
 .inPage {
     background: palevioletred;
 }
+
 footer {
     height: 170px;
     background: blueviolet;
 }
 
 /*Home Page*/
-#MainPage {
-    height: auto;
+/*#MainPage {
+    height: 200vh;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
-    grid-area: auto
-    
-    
+    grid-area: 
+    " mi1 mi1 "
+    " mdv mdv "
+    " mdv mdv "
+    " mi2 mi2 "
+    " mbt mbt "
     ;
 
+}*/
+
+#MainPage {
+    display: flex;
+    height: 220vh;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+#mainImg1 {
+    grid-area: mi1;
+    background: black;
+    height: 40vh;
+    width:100%;
+    
 }
 
 #innerGridWrapper {
-    grid-area: dv;
+    grid-area: mdv;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 5px;
+    height: 30%;
+    width:100%;
 }
 
 #innerGridWrapper div {
-    background: blue;
+    background: teal;
+    height: 100%;
+    width:100%;
 }
-
-
-
-
 
 #breadText {
-    
+    grid-area: mbt;
+    background: darkblue;
+    height: 73vh;
+    width:100%;
+}
+#mainImg2 {
+grid-area: mi2;
+background: black;
+height: 40vh;
+    width:100%;
 }
 /*AboutUs Page*/
+#AUPage {
+    display: flex;
+    height: 250vh;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#AUimg {
+    background: black;
+    width: 100%;
+    height: 200px;
+
+}
+
+#AUBreadText {
+    background:rebeccapurple;
+    height: 88.2%;
+    width: 100%;
+}
 
 /*Donation Page*/
 
+#DonPage {
+display: flex;
+background:orchid;
+height: 150vh;
+justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+#donImg {
+background: black;
+height: 200px;
+width: 100%;
+}
+
+#donateFillIn {
+display: grid;
+width: 100%;
+
+}
+#donateFillIn div {
+background: white;
+margin: 2%;
+height: 50px;
+}
+
+#donButton {
+background: orange;
+height: 70px;
+width: 70%;
+margin: 10px;
+}
+
+#donateText {
+background: yellow;
+width: 100%;
+height: 37%;
+}
+
+
 /*Research Page*/
+#RechPage {
+display: flex;
+height: 300vh;
+justify-content: center;
+    flex-wrap: wrap;
+}
+
+#rechImg {
+background: black;
+height: 200px;
+width: 100%;
+}
+
+#rechText{
+background:chocolate;
+width: 100%;
+height: 224.5vh;
+}
+
+#extrenalLinks{
+width: 100%;
+height: auto;
+display: flex;
+flex-wrap: wrap;
+background: crimson;
+
+}
+
+#extrenalLinks div{
+background: cadetblue;
+margin: 10px;
+width: 20vh;
+height: 20vh;
+}
 
 /*Volunteer Page*/
+
+#VolPage{
+    display: flex;
+}
