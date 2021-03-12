@@ -37,8 +37,8 @@
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
-/*Phone screen*/
-@media screen and (min-width: 50px ) {
+
+
     nav {
     background: teal;
     display: flex;
@@ -49,7 +49,42 @@
     position: sticky;
         top:0%;
     }
+    .navLinks {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        position: absolute;
+        right: 0px;
+        height: 90vh;
+        top: -90vh;
+        background: rgb(16, 173, 173);
+        align-items: center;
+        width: 25%;
+        transition: all 0.5s;
+    }
+    .navLinks a {
+        color: white;
+        text-decoration: none;
+        letter-spacing: 3px;
+        font-size: 5vw;
+        text-align: center;
+    }
+    .menu {
+        margin-right: 3vh;
+        cursor: pointer;
+    }
 
+    
+.inPage {
+    background: palevioletred;
+}
+
+footer {
+    height: 170px;
+    background: blueviolet;
+}
+/*Phone screen*/
+    @media screen and (min-width: 480px ) {
 .navLinks {
     display: flex;
     flex-direction: column;
@@ -60,31 +95,22 @@
     top: -90vh;
     background: rgb(16, 173, 173);
     align-items: center;
-    width: 25%;
+    width: 15%;
     transition: all 0.5s;
 }
+    }
 
+
+@media screen and (min-width: 480px ) {
 .navLinks a {
     color: white;
     text-decoration: none;
     letter-spacing: 3px;
-    font-size: 5vw;
+    font-size: 2vw;
+    text-align: center;
 }
-
-    .menu {
-        margin-right: 3vh;
-        cursor: pointer;
-    }
-
-    }
-.inPage {
-    background: palevioletred;
 }
-
-footer {
-    height: 170px;
-    background: blueviolet;
-}
+    
 
 /*Home Page*/
 /*#MainPage {
@@ -189,22 +215,28 @@ width: 100%;
 
 }
 #donateFillIn div {
-background: white;
-margin: 2%;
+    background: white;
+width: 80%;
+margin: 20px;
 height: 50px;
+}
+#donateFillIn input {
+    background: white;
+    width: 100%;
+    height: 50px;
 }
 
 #donButton {
 background: orange;
 height: 70px;
-width: 70%;
+width: 60%;
 margin: 10px;
 }
 
 #donateText {
 background: yellow;
 width: 100%;
-height: 37%;
+height: 20%;
 }
 
 
@@ -248,4 +280,47 @@ height: 20vh;
 
 #VolPage{
     display: flex;
+    background: cyan;
+    height: 270vh;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
+#volImg{
+background: black;
+height: 180px;
+width: 100%;
+}
+
+#volText1{
+background: crimson;
+width: 100%;
+height: 70vh;
+}
+
+#volFillIn{
+background:darkolivegreen;
+width: 100%;
+height: 71.5vh;
+}
+
+#volFillIn div {
+    background: white;
+width: 80%;
+margin: 20px;
+height: 50px;
+}
+
+#volButton{
+background:darkmagenta;
+width: 100%;
+margin: 40px;
+height: 70px;
+}
+
+#volText2{
+background: darkgreen;
+width: 100%;
+height: 80vh;
+}
+

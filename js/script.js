@@ -9,4 +9,4 @@ function toggleMeny() {
 }
 menu.addEventListener('click', toggleMeny)
 
-document.querySelector("footer").innerHTML = "jkhgjfdhhjkhghfdhh"
+document.querySelector("footer").innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, error ipsam rerum cumque laborum impedit ea corrupti debitis, amet facere neque iure repudiandae molestias similique? Quam facilis iusto et sapiente."
