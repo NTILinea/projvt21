@@ -5,12 +5,10 @@
     padding:0px;
     box-sizing: border-box;
 }
-#responisveImg {
+.responisveImg {
     width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: auto;
+    
 }
 
 /*Burger menu code stuff*/
@@ -43,9 +41,6 @@
 .toggle .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
-
-
-
     nav {
     background: teal;
     display: flex;
@@ -117,53 +112,62 @@ footer {
     text-align: center;
 }
 }
-    
-
 /*Home Page*/
-/*#MainPage {
-    height: 200vh;
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 2fr;
-    grid-area: 
-    " mi1 mi1 "
-    " mdv mdv "
-    " mdv mdv "
-    " mi2 mi2 "
-    " mbt mbt "
-    ;
-
-}*/
 
 #MainPage {
     display: flex;
-    height: 220vh;
+    height: auto;
     justify-content: center;
     flex-wrap: wrap;
-}
-
+}    
 
 #mainImg1 {
     grid-area: mi1;
     background: black;
-    height: 40vh;
-    width:100%;
+    width: 100%;
+    height: auto;
+    
+    text-align: center;
     
 }
+#imgText {
+position: relative;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: rgb(184, 79, 79);
+  background: white;
+  width: 100%;
+  font-family: courier New;
+}
+@media screen and (max-width: 650px ) {
+    #imgText  {
+        position: relative;
+        bottom: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size:8vw;
+        color: rgb(184, 79, 79);
+        background: white;
+        width: 100%;
+        font-family: courier New;  
+    }
+    }
 
 #innerGridWrapper {
     grid-area: mdv;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 5px;
-    height: 30%;
+    grid-gap: 3%;
+    height: 500px;
     width:100%;
 }
 
 #innerGridWrapper div {
     background: teal;
-    height: 100%;
+    height: auto;
     width:100%;
 }
 
@@ -173,29 +177,24 @@ footer {
     height: 73vh;
     width:100%;
 }
-#mainImg2 {
-grid-area: mi2;
-background: black;
-height: 40vh;
-    width:100%;
-}
+
 /*AboutUs Page*/
 #AUPage {
     display: flex;
-    height: 250vh;
+    height: auto;
     justify-content: center;
     flex-wrap: wrap;
 }
 #AUimg {
     background: black;
     width: 100%;
-    height: 200px;
+    height: auto;
 
 }
 
 #AUBreadText {
-    background:rebeccapurple;
-    height: 88.2%;
+    background:rgb(120, 96, 145);
+    height: 800px;
     width: 100%;
 }
 
@@ -204,7 +203,7 @@ height: 40vh;
 #DonPage {
 display: flex;
 background:orchid;
-height: 150vh;
+height: auto;
 justify-content: center;
     flex-wrap: wrap;
     
@@ -212,12 +211,11 @@ justify-content: center;
 
 #donImg {
 background: black;
-height: 200px;
+height: auto;
 width: 100%;
 }
 
 #donateFillIn {
-display: grid;
 width: 100%;
 
 }
@@ -243,21 +241,21 @@ margin: 10px;
 #donateText {
 background: yellow;
 width: 100%;
-height: 20%;
+height: 300px;
 }
 
 
 /*Research Page*/
 #RechPage {
 display: flex;
-height: 300vh;
+height: auto;
 justify-content: center;
     flex-wrap: wrap;
 }
 
 #rechImg {
 background: black;
-height: 200px;
+height: auto;
 width: 100%;
 }
 
@@ -273,6 +271,8 @@ height: auto;
 display: flex;
 flex-wrap: wrap;
 background: crimson;
+align-items: center;
+justify-content: center;
 
 }
 
@@ -288,14 +288,14 @@ height: 20vh;
 #VolPage{
     display: flex;
     background: cyan;
-    height: 270vh;
+    height: auto;
     justify-content: center;
     flex-wrap: wrap;
 }
 
 #volImg{
 background: black;
-height: 180px;
+height: auto;
 width: 100%;
 }
 
@@ -316,6 +316,12 @@ height: 71.5vh;
 width: 80%;
 margin: 20px;
 height: 50px;
+
+}
+#volFillIn input {
+    background: white;
+    width: 100%;
+    height: 50px;
 }
 
 #volButton{
@@ -330,4 +336,14 @@ background: darkgreen;
 width: 100%;
 height: 80vh;
 }
+
+
+
+@media screen and (min-width: 480px ) {
+    
+    
+    
+}
+
+
 
