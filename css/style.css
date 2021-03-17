@@ -5,6 +5,13 @@
     padding:0px;
     box-sizing: border-box;
 }
+#responisveImg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*Burger menu code stuff*/
 .menu div {
