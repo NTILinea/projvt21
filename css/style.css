@@ -42,7 +42,7 @@
     transform: rotate(45deg) translate(-5px, -6px);
 }
     nav {
-    background: teal;
+    background:rgb(179, 45, 21);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -59,7 +59,7 @@
         right: 0px;
         height: 90vh;
         top: -90vh;
-        background: rgb(16, 173, 173);
+        background:rgb(109, 36, 24);
         align-items: center;
         width: 25%;
         transition: all 0.5s;
@@ -78,12 +78,13 @@
 
     
 .inPage {
-    background: palevioletred;
+    text-decoration: underline;
 }
 
 footer {
     height: 170px;
-    background: blueviolet;
+    background: rgb(36, 13, 9);
+    color: white;
 }
 /*Phone screen*/
     @media screen and (min-width: 480px ) {
@@ -95,10 +96,13 @@ footer {
     right: 0px;
     height: 90vh;
     top: -90vh;
-    background: rgb(16, 173, 173);
+    background: rgb(109, 36, 24);
     align-items: center;
     width: 15%;
     transition: all 0.5s;
+}
+.inPage {
+    text-decoration: underline;
 }
     }
 
@@ -110,6 +114,9 @@ footer {
     letter-spacing: 3px;
     font-size: 2vw;
     text-align: center;
+}
+.inPage {
+    text-decoration: underline;
 }
 }
 /*Home Page*/
@@ -166,14 +173,14 @@ position: relative;
 }
 
 #innerGridWrapper div {
-    background: teal;
+    background: rgb(109, 36, 24);
     height: auto;
     width:100%;
 }
 
 #breadText {
     grid-area: mbt;
-    background: darkblue;
+    background: rgb(243, 230, 225);
     height: 73vh;
     width:100%;
 }
@@ -193,7 +200,7 @@ position: relative;
 }
 
 #AUBreadText {
-    background:rgb(120, 96, 145);
+    background:rgb(243, 230, 225);
     height: 800px;
     width: 100%;
 }
@@ -202,7 +209,7 @@ position: relative;
 
 #DonPage {
 display: flex;
-background:orchid;
+background:rgb(109, 36, 24);
 height: auto;
 justify-content: center;
     flex-wrap: wrap;
@@ -239,7 +246,7 @@ margin: 10px;
 }
 
 #donateText {
-background: yellow;
+background: rgb(243, 230, 225);
 width: 100%;
 height: 300px;
 }
@@ -260,7 +267,7 @@ width: 100%;
 }
 
 #rechText{
-background:chocolate;
+background:rgb(243, 230, 225);
 width: 100%;
 height: 224.5vh;
 }
@@ -270,7 +277,7 @@ width: 100%;
 height: auto;
 display: flex;
 flex-wrap: wrap;
-background: crimson;
+background: rgb(109, 36, 24);
 align-items: center;
 justify-content: center;
 
@@ -287,7 +294,6 @@ height: 20vh;
 
 #VolPage{
     display: flex;
-    background: cyan;
     height: auto;
     justify-content: center;
     flex-wrap: wrap;
@@ -300,13 +306,13 @@ width: 100%;
 }
 
 #volText1{
-background: crimson;
+background: rgb(243, 230, 225);
 width: 100%;
 height: 70vh;
 }
 
 #volFillIn{
-background:darkolivegreen;
+background:rgb(109, 36, 24);
 width: 100%;
 height: 71.5vh;
 }
@@ -325,14 +331,25 @@ height: 50px;
 }
 
 #volButton{
-background:darkmagenta;
-width: 100%;
+background:rgb(179, 26, 51);
+width: 300px;
 margin: 40px;
-height: 70px;
+height: 150px;
+color: white;
+font-size: 40px;
+border: none;
+border-radius: 8px;
+transition-duration: 0.4s;
+cursor: pointer;
+
+}
+
+#volButton:hover {
+    background:rgb(95, 15, 28);
 }
 
 #volText2{
-background: darkgreen;
+background: rgb(243, 230, 225);
 width: 100%;
 height: 80vh;
 }
