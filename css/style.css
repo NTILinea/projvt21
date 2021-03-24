@@ -59,7 +59,7 @@
         right: 0px;
         height: 90vh;
         top: -90vh;
-        background:rgb(109, 36, 24);
+        background:rgb(99, 22, 20);
         align-items: center;
         width: 25%;
         transition: all 0.5s;
@@ -85,6 +85,9 @@ footer {
     height: 170px;
     background: rgb(36, 13, 9);
     color: white;
+    padding-left:8vw;
+    padding-right: 8vw ;
+    padding-top: 1vw ;
 }
 /*Phone screen*/
     @media screen and (min-width: 480px ) {
@@ -96,7 +99,7 @@ footer {
     right: 0px;
     height: 90vh;
     top: -90vh;
-    background: rgb(109, 36, 24);
+    background: rgb(99, 22, 20);
     align-items: center;
     width: 15%;
     transition: all 0.5s;
@@ -133,7 +136,6 @@ footer {
     background: black;
     width: 100%;
     height: auto;
-    
     text-align: center;
     
 }
@@ -183,6 +185,7 @@ position: relative;
     background: rgb(243, 230, 225);
     height: 73vh;
     width:100%;
+    padding: 4vw;
 }
 
 /*AboutUs Page*/
@@ -203,6 +206,7 @@ position: relative;
     background:rgb(243, 230, 225);
     height: 800px;
     width: 100%;
+    padding: 4vw;
 }
 
 /*Donation Page*/
@@ -224,31 +228,47 @@ width: 100%;
 
 #donateFillIn {
 width: 100%;
-
+display: flex;
+justify-content: center;
+align-items: center;
 }
 #donateFillIn div {
-    background: white;
 width: 80%;
 margin: 20px;
 height: 50px;
+
 }
 #donateFillIn input {
     background: white;
     width: 100%;
     height: 50px;
+    border:solid 3px gray;
+    border-radius: 8px;
+    padding: 10px;
 }
 
 #donButton {
-background: orange;
-height: 70px;
-width: 60%;
-margin: 10px;
+    background:rgb(179, 26, 51);
+    width: 300px;
+    margin: 40px;
+    height: 100px;
+    color: white;
+    font-size: 40px;
+    border: none;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#donButton:hover {
+    background: rgb(95, 15, 28);
 }
 
 #donateText {
 background: rgb(243, 230, 225);
 width: 100%;
 height: 300px;
+padding: 4vw;
 }
 
 
@@ -270,6 +290,7 @@ width: 100%;
 background:rgb(243, 230, 225);
 width: 100%;
 height: 224.5vh;
+padding: 4vw;
 }
 
 #extrenalLinks{
@@ -283,11 +304,12 @@ justify-content: center;
 
 }
 
-#extrenalLinks div{
-background: cadetblue;
-margin: 10px;
-width: 20vh;
-height: 20vh;
+#extrenalLinks a{
+    background: cadetblue;
+    margin: 10px;
+    width: 20vh;
+    height: 20vh;
+    
 }
 
 /*Volunteer Page*/
@@ -309,6 +331,7 @@ width: 100%;
 background: rgb(243, 230, 225);
 width: 100%;
 height: 70vh;
+padding: 4vw;
 }
 
 #volFillIn{
@@ -318,16 +341,18 @@ height: 71.5vh;
 }
 
 #volFillIn div {
-    background: white;
 width: 80%;
 margin: 20px;
 height: 50px;
-
 }
 #volFillIn input {
     background: white;
     width: 100%;
     height: 50px;
+    border:solid 3px gray;
+    border-radius: 8px;
+    padding: 10px;
+    
 }
 
 #volButton{
@@ -352,14 +377,7 @@ cursor: pointer;
 background: rgb(243, 230, 225);
 width: 100%;
 height: 80vh;
-}
-
-
-
-@media screen and (min-width: 480px ) {
-    
-    
-    
+padding: 4vw;
 }
 
 
