@@ -84,10 +84,11 @@
 footer {
     height: 170px;
     background: rgb(36, 13, 9);
-    color: white;
+    color: rgb(104, 72, 66);
     padding-left:8vw;
     padding-right: 8vw ;
-    padding-top: 1vw ;
+    padding-top: 12vw ;
+    font-size: small;
 }
 /*Phone screen*/
     @media screen and (min-width: 480px ) {
@@ -106,6 +107,7 @@ footer {
 }
 .inPage {
     text-decoration: underline;
+    background: black;
 }
     }
 
@@ -169,7 +171,7 @@ position: relative;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 3%;
+    grid-gap: 8px;
     height: 500px;
     width:100%;
 }
@@ -177,7 +179,9 @@ position: relative;
 #innerGridWrapper div {
     background: rgb(109, 36, 24);
     height: auto;
-    width:100%;
+    width:96%;
+    margin: 8px;
+
 }
 
 #breadText {
@@ -231,6 +235,7 @@ width: 100%;
 display: flex;
 justify-content: center;
 align-items: center;
+flex-wrap: wrap;
 }
 #donateFillIn div {
 width: 80%;
